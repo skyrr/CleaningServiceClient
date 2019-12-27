@@ -4,10 +4,38 @@
     left:0;
     right:0;
     bottom:0;
+    padding-top: 64px;
 }
 
 .container .mat-drawer {
-    padding-left:20px;
-    padding-left:20px;
     min-width:200px;
+}
+
+.container .mat-drawer .mat-button {
+    display:block;
+    width:100%;
+    text-align:left;
+}
+
+.mat-menu-item {
+    width: min-content;
+    /* color: aliceblue; */
+}
+.toolbar-item-color {
+    color: aliceblue;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.mat-toolbar  {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 5px 5px gray;
+}
+.mat-toolbar-row{
+    position: fixed;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000
 }
